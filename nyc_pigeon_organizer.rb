@@ -13,7 +13,7 @@ data.each do |attribute, list|
         new_hash.store(name, attribute => option.to_s)
       elsif check != nil
         num = new_hash[name].keys.length
-        i = num - 1 
+        i = num - 1
         if check.keys[i] == attribute
           array = []
           array << check.values[i]
