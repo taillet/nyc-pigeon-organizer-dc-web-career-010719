@@ -21,11 +21,12 @@ data.each do |attribute, list|
         array << {attribute => [option.to_s]}
         new_hash[name] = array.flatten
       end
-      binding.pry
 
       end
     end
   end
+  binding.pry
+
 end
 new_hash
 end
