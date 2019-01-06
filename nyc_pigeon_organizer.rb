@@ -24,7 +24,6 @@ data.each do |attribute, list|
         array << check
         array << {attribute => [option.to_s]}
         new_hash[name].store(array[1].keys[0], array[1].values[0])
-        binding.pry
 
       end
 
@@ -33,5 +32,7 @@ data.each do |attribute, list|
   end
 
 end
+binding.pry
+
 new_hash
 end
