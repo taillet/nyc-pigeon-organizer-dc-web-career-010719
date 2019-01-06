@@ -17,7 +17,7 @@ data.each do |attribute, list|
         if check.keys[i] == attribute
           array = []
           array << check.values[i]
-          array << option.to_s
+          array << [option.to_s]
           new_hash[name][attribute] = array
         elsif check.keys[i] != attribute
         array = []
