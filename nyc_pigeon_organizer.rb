@@ -14,8 +14,6 @@ def nyc_pigeon_organizer(data)
           elsif check != nil
             num = new_hash[name].keys.length
             i = num - 1
-            binding.pry
-
           if check.keys[i] == attribute
             array = []
             array << check.values[i]
