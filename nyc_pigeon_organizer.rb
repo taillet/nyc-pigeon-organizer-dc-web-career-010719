@@ -18,7 +18,7 @@ data.each do |attribute, list|
         elsif check.keys[0] != attribute
         array = []
         array << check
-        array << {attribute => [option.to_s]}
+        array[0] << {attribute => [option.to_s]}
         new_hash[name] = array.flatten
         binding.pry
 
