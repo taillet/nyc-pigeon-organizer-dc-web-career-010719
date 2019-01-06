@@ -11,11 +11,11 @@ def nyc_pigeon_organizer(data)
         check = new_hash[name]
           if check == nil
             new_hash.store(name, attribute => [option.to_s])
-            binding.pry
-
           elsif check != nil
             num = new_hash[name].keys.length
             i = num - 1
+            binding.pry
+
           if check.keys[i] == attribute
             array = []
             array << check.values[i]
