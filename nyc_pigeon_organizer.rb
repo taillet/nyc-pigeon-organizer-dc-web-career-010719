@@ -19,7 +19,7 @@ data.each do |attribute, list|
         array = []
         array << check
         array << {attribute => [option.to_s]}
-        new_hash[name] = array.flatten.flatten
+        new_hash[name] = array.flatten.
         binding.pry
       end
       end
