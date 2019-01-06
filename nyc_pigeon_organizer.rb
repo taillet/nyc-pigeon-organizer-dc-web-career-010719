@@ -10,6 +10,8 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         check = new_hash[name]
           if check == nil
+            binding.pry
+
             new_hash.store(name, attribute => [option.to_s])
           elsif check != nil
             num = new_hash[name].keys.length
@@ -29,6 +31,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
   new_hash
 end
