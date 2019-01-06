@@ -10,7 +10,7 @@ data.each do |attribute, list|
     names.each do |name|
       check = new_hash[name]
       if check == nil
-        new_hash.store(name, attribute => option.to_s)
+        new_hash.store(name, attribute => [option.to_s])
       elsif check != nil
         num = new_hash[name].keys.length
         i = num - 1
