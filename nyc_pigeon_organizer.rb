@@ -32,5 +32,6 @@ data.each do |attribute, list|
   end
 
 end
+binding.pry
 new_hash
 end
